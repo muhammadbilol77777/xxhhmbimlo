@@ -26,10 +26,10 @@
         <div class="answers">
           <div class="main-container__main__correct-answers">
             <ul style="list-style-image: url({%static 'icons/correct-mark.png'%});">
-              <!--style="align-items: center" -->
-              {% if connect %}
+              style="align-items: center"
+              {% if correct %}
               <li>{{ correct.word }}</li>
-              {% elif messag%}
+              {% elif message %}
               <li>{{message}}</li>
               {% endif %}
             </ul>
